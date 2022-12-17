@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Place of service</title>
+	</head>
+	<body>
+	
+	    <input type="text" value="" placeholder="enter your age" id="age">
+	    <input type="text" value="" placeholder="enter your sex" id="sex">
+		<button onclick="fun()">Answer</button>
+	<script>
+	    function fun(){
+            var first=document.getElementById("age").value;
+            var second=document.getElementById("sex").value;
+			
+			if(second=="female"){
+			    console.log("work only in urban areas")
+			}
+			else if((second=="male")&&(first>=20)&&(first<=40)){
+			    console.log("work anywhere")
+			}
+			else if((second=="male")&&(first>=40)&&(first<=60)){
+			    console.log("work in urban areas")
+			}
+			else{
+			    console.log("Take rest")
+			}
+			
+
+        }		
+	</script>
+	</body>
+	</html>
